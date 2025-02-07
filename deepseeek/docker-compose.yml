@@ -24,3 +24,4 @@ services:
 volumes:
   ollama:
   open-webui:
+#ejecutar luego deepseeek-ollama-1
