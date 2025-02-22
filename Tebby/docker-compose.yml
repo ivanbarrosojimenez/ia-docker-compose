@@ -12,9 +12,9 @@ services:
     environment:
       - TABBY_WEBSERVER_JWT_TOKEN_SECRET=176398a0-add7-4780-b24f-479ff9f5f52f
     deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
+          resources:
+            reservations:
+              devices:
+              - driver: nvidia
+                capabilities: ["gpu"]
+                count: 1  # Ajusta el recuento para el número de GPUs que quieres usar
